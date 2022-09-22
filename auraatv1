@@ -1,0 +1,34 @@
+<template>
+	<div class="app slds-p-around_x-large">
+		<h1 class="slds-text-heading_large">{Webcomponentse}</h1>
+		
+		<h1> Lead</h1>
+
+		<h1>Nome{lead.nome}</h1>
+		<h1>Sobrenome{lead.sobrenome}</h1>
+</br>
+		<p>Idade{lead.idade}</p>
+		<p>Email{lead.email}</p>
+		<p>Classificação{lead.classificacao}</p>
+		<p>Empresa{lead.empresa}</p>
+		<p>Receita Anual{lead.receita}</p>
+	</div>
+</template>
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Controller
+import { LightningElement } from "lwc";
+
+export default class App extends LightningElement {
+
+lead={
+  nome:'Gisele',
+  sobrenome:'Marcondes',
+  idade:'36',
+  email:'giselemarcondes@yahoo.com.br',
+  classificacao:'hot',
+  empresa:'chocolate com pimenta',
+  receita: 15.000
+
+};
+}
